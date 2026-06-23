@@ -1,13 +1,9 @@
-package com.demo.upimesh.controller;
+package com.demo.upimesh.config;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
-@Controller
-public class DashboardController {
-
-    @GetMapping("/")
-    public String home() {
-        return "dashboard";
-    }
+@Configuration
+@EnableScheduling
+public class AppConfig {
 }
